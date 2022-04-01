@@ -1,0 +1,49 @@
+:root {
+    font-size: 6px;
+    font-family: Helvetica;
+}
+
+body {
+    background-image: conic-gradient(
+        #0f2257,
+        #1d41a5,
+        #1d3782,
+        #90f1fe,
+        #1145c1,
+        #06153e,
+        #06153e
+    );
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+#container {
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 3.4rem;
+    font-weight: 600;
+    letter-spacing: -1.2px;
+    color: #fff;
+    width: 800px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+} 
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+a:checked {
+    text-decoration: none;
+    color: #fff;
+}
