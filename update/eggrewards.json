@@ -1,0 +1,15 @@
+{
+  "Name": "Egg Rewards",
+  "DEVELOP": {
+    "latest": "1.0",
+    "changelog": "插件的第一个版本"
+  },
+  "Beta": {
+    "latest": "1.0",
+    "changelog": "插件的第一个版本"
+  },
+  "RELEASE": {
+    "latest": "1.0",
+    "changelog": "插件的第一个版本"
+  }
+}
