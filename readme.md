@@ -11,4 +11,4 @@ Secondly, You should go to "jar/\<Server Type\>/\<Server Version\>/" and make a 
     "Type": "\<Type\>",  
     "Version": "\<Version\>"  
 }  
-Last, Make Pull Request  
+Last, Make Pull Request and wait me to confirm it  
