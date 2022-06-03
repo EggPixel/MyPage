@@ -23,8 +23,11 @@ download.addEventListener("click", () => {
 type.addEventListener("change", () => {
     var index = type.selectedIndex;
     selectedType = type.options[index].text;
-    if (refresh_version())
-        refresh();
+    hash.textContent = "No Value";
+    downloadLink = "None";
+    download.classList.remove("btn2");
+    download.classList.add("btn3");
+    refresh_version();
 })
 
 version.addEventListener("change", () => {
@@ -36,11 +39,11 @@ function refresh_version() {
     $.getJSON("jar/Version.json", function(data) {
         version.innerHTML = "";
         console.debug("DEBUG >> Get Json File");
-        console.debug("DEBUG >> Get Version Value: " + data[selectedType]);
         if (data[selectedType] == undefined || data[selectedType] == "") {
             console.warn("WARN >> Get no version!");
-            return false;
+            return;
         }
+        console.debug("DEBUG >> Get Version Value: " + data[selectedType]);
         var v1 = data[selectedType].split(",");
         for (i in v1) {
             console.debug("DEBUG >> Get Option: " + v1[i]);
@@ -48,7 +51,9 @@ function refresh_version() {
             opt.innerHTML = v1[i];
             version.appendChild(opt);
         }
-        return true;
+        var index = version.selectedIndex;
+        selectedVersion = version.options[index].text;
+        refresh();
     });
 }
 function refresh() {
