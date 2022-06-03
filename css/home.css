@@ -209,7 +209,6 @@ a:checked {
     letter-spacing: 0.1rem;
     padding: 0.5rem 2rem;
     text-transform: uppercase;
-    transition: transform 80ms ease-in;
 }
 .from > .btn {
     margin-top: 1.5rem;
@@ -228,7 +227,7 @@ a:checked {
     outline: none;
 }
 .btn3:active {
-    transform: scale(0.95);
+    transform: scale(1);
 }
 .btn3:focus {
     outline: none;
